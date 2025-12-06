@@ -117,10 +117,10 @@ public class copy {
                             System.out.print("Enter option: ");
                             option = input.nextInt();
                                    
-                                        case 1 -> {System.out.println("Message centre number");}
-                                        case 2 -> {System.out.println("Message send as");}
-                                        case 3 -> {System.out.println("message validity");}
-                                        default ->{System.out.println("Enter valid number");}
+                    case 1 -> {System.out.println("Message centre number");}
+                    case 2 -> {System.out.println("Message send as");}
+                    case 3 -> {System.out.println("message validity");}
+                    default ->{System.out.println("Enter valid number");}
                         }
                        
                         }
@@ -135,10 +135,10 @@ public class copy {
                             System.out.print("Enter option: ");
                             option = input.nextInt();
                                     switch(option){
-                                        case 1 -> {System.out.println("Delivery");}
-                                        case 2 -> {System.out.println("Reply via same centre");}
-                                        case 3 -> {System.out.println("character support");}
-                                        default ->{System.out.println("Enter valid number");}
+                     case 1 -> {System.out.println("Delivery");}
+                     case 2 -> {System.out.println("Reply via same centre");}
+                     case 3 -> {System.out.println("character support");}
+                     default ->{System.out.println("Enter valid number");}
                                     }
 
                          }
