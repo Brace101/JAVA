@@ -27,14 +27,6 @@ public class Square{
 
 
 
-        //System.out.print("num2 * num2");
-        //int num2square = input.nextInt();
-
-
-
-
-
-
 
 }
 

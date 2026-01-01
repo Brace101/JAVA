@@ -4,10 +4,11 @@ public class Converter{
     Scanner input = new Scanner(System.in);
 
        System.out.print("Enter celcius: ");
-       double celcius = input.nextInt();
+       double celcius = input.nextDouble();
 
-       double convertToFahrenheit = (9 / 5) * ("celsius + 32");
-       System.out.println("%d%n convert to ferehenit" + celcius);
+       double Fahrenheit = (9.0 / 5) * celcius + 32;
+
+       System.out.printf("43 celsius is 109.4 %.1f\n", celcius);
 
       
 }

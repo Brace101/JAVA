@@ -12,7 +12,7 @@ public class Energy{
     System.out.println("Enter initialTemperature");
     double initialTemperature = input.nextDouble();
     
-    double joules = (weight * (finalTemperature - initialTemperature) * 4184);
+    double joules = weight * (finalTemperature - initialTemperature) * 4184;
     System.out.printf("joules is %.1f\n: ", joules);
 
 

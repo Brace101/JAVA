@@ -12,7 +12,7 @@ public class Cylinder{
     double pi = 3.1415;
 
     double area = radius * radius * pi;
-    System.out.printf("Area is: %.4f\n ", area);
+    System.out.printf("Area is: %f\n ", area);
 
     double volume = area * length;
     System.out.printf("volume is: %.1f\n ", volume);
