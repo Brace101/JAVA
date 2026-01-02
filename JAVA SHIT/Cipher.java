@@ -13,14 +13,14 @@ public class Cipher{
 
 for (int index = 0; index <word.length(); index++){ 
     char eachWord = word.charAt(index);
-    int fig = eachWord + number;
-    char finalfig=(char) fig;
+    int figNum = eachWord + number;
+    char finalfig=(char) figNum;
     newWord = newWord + finalfig; 
     
 
 }
-
     System.out.println(newWord);
+    
 
 }
 
