@@ -1,10 +1,14 @@
 public class Forloop {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-            if (i % i == 1) { 
-                System.out.println(i);
-            }
-        }
-    }
-}
 
+        int sum = 0;
+        
+
+        for (int index = 200; index <= 700; index++) {
+            if (index % 2 == 1) {  
+
+           System.out.println(sum += index);        
+      
+}
+}
+}}
