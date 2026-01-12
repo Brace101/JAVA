@@ -4,10 +4,8 @@ public class CardValidator{
         Scanner input = new Scanner(System.in);
         boolean notDigitOnly=false;
        
-      
         int sum=0;
         
-
         System.out.print("Hello, kinldy enter your card details  to verify: ");
         String cardDetails = input.nextLine();
 
@@ -61,60 +59,5 @@ public class CardValidator{
         }
 }
 }
-
-    
-    
-   
-        
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
