@@ -1,57 +1,96 @@
 import java.util.Scanner;
-public class BookSuggestion{
-    public static void main(String [] args){
+public class BookSuggestion {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-    String moreSuggest = "yes";
+ while (true) {
 
-while (true){
+      String menu = """
+                    
+     -----------WELCOME TO THE BOOK SUGGESTION SYSTEM!----------
+                1. Get Suggestion
+                2. Add Book
+                3. Remove Book
+                4. Update Book
+                5. Show all books
+                0. Exit
+                    
+ """;
+        System.out.println(menu);
+        System.out.print("Enter Option: ");
+        int option = input.nextInt();
+        input.nextLine();
 
-String Menu = """
+switch (option) {
 
-    WELCOME TO THE BOOK SUGGESTION SYSTEM!
-    1.  Get Suggestion
-    2.  Add Book
-    3.  Remove Book
-    4.  Update Bok
-    5.  Show all books
+case 1 -> {
+        System.out.println("""
+        --- Book of the Day ---
+        Title: The Hobbit
+        Author: J.R.R. Tolkien
+        Pages: 320
+""");
 
-""";
-    System.out.println(Menu);   
-    System.out.print("Enter Option: ");
-    int option = input.nextInt();
-    input.nextLine();
+while (true) {
+        System.out.print("Would you like another suggestion? (Yes/No): ");
+        String moreSuggest = input.nextLine();
 
-switch (option){
-        case 1 ->{
+        if (moreSuggest.equalsIgnoreCase("yes")) {
+        System.out.println("""
+        --- Another Suggestion ---
+        Title: The Mystery
+        Author: Jeffrey Matthew
+        Pages: 97
+""");
+        } else if (moreSuggest.equalsIgnoreCase("no")) {
+break;
+        } else {
+        System.out.println("Please enter Yes or No.");
+        }
+        }
+        }
 
-Menu = """
-        ---Book of the day---
-            Book Title: The Hobbit
-            Author: JOhn ROnald Reuel
-            Number of pages: 47
-""";
-    System.out.println(Menu);
+        case 2 -> {
+        System.out.print("Enter book title to add: ");
+        String title = input.nextLine();
+        
+        System.out.print("Kindly enter the Author: ");
+        String author = input.nextLine();
 
-    while(true){
-    System.out.println("Would you like to get another suggestion: Yes/No?");
-    moreSuggest = input.nextLine();
+        System.out.print("Kindly enter the number of pages: ");
+        int page = input.nextInt();
+        
+        System.out.println(title + " added successfully!");
+        }
 
-    if (moreSuggest.equalsIgnoreCase("yes")){  
+        case 3 -> {
+        System.out.print("Enter book title to remove: ");
+        String title = input.nextLine();
+        System.out.println(title + " removed successfully!");
+        }
 
-Menu = """
-        Book Tite: The Mystery
-        Author: Jeffery Matthew
-        NUmber of pages: 12
+        case 4 -> {
+        System.out.print("Enter book title to update: ");
+        String title = input.nextLine();
+        System.out.println(title + " updated successfully!");
+        }
 
-""";
-    System.out.println(Menu);
+        case 5 -> {
+        System.out.println("""
+        --- All Books ---
+        1. The Hobbit
+        2. The Mystery
+""");
+        }
 
+        case 0 -> {
+        System.out.println("Thank you for using the Book Suggestion System!");
+        System.exit(0);
+        }
 
+        default -> System.out.println("Invalid option. Try again.");
+ }
+ }
+    }
+}
 
-
-
-
-
-
-}}}}}}}

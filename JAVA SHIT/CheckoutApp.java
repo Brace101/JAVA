@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-public class CheckoutApp{
-    public static void main (String [] args){
+    public class CheckoutApp{
+        public static void main (String [] args){
         Scanner input = new Scanner(System.in);
         
         int counter = 0; 
@@ -15,6 +15,9 @@ public class CheckoutApp{
     
         double discount=0;
         double subTotal=0;
+
+        System.out.println("Enter date && Time: ");
+        String DateTime = input.nextLine();
         
         while (true){
 
@@ -33,12 +36,8 @@ public class CheckoutApp{
    
         double vat = subTotal * 0.075;
     
-        System.out.printf("The VAT is: %.2f\n", vat);
         input.nextLine();
         
-        System.out.println("Enter date && Time: ");
-        String DateTime = input.nextLine();
-
         System.out.println("Add more items? Yes Or No");
         String moreItems = input.nextLine();
         
@@ -143,3 +142,5 @@ break;
 }
 
 }
+
+

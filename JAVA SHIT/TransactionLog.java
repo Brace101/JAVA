@@ -93,7 +93,7 @@ case 3:
 break;
 
 case 4:
-            System.out.println("Thank you for using the app.");
+            System.out.println("Thank you for choosing us.");
             System.out.println("Enjoy the rest of your day.");
             
          

@@ -19,7 +19,7 @@ while (true){
 
         double rate = (annualInterest/100)/12;
 
-        double monthlyPayment = principalAmount * (rate * Math.pow(1 + rate, duration*12)) / (Math.pow(1 + rate, duration*12) - 1);
+        double monthlyPayment = principalAmount * (rate * Math.pow(1 + rate,            duration*12)) / (Math.pow(1 + rate, duration*12) - 1);
         System.out.printf("Your monthlyPayment is %.2f\n", monthlyPayment);
 
         System.out.println("Do you want to calculate more? Yes or No");
