@@ -55,7 +55,7 @@ import java.util.ArrayList;
         input.nextLine();
         double total= subTotal - discount;
         double billTotal = subTotal-discount+vat;
-
+        System.out.println();
         
         System.out.printf("""
         WELCOME TO SEMICOLON STORES
@@ -78,7 +78,7 @@ import java.util.ArrayList;
 
 }
 
-System.out.printf(          """
+        System.out.printf("""
         -------------------------------------------------------------------------
                                                 subTotal:       %.2f
                                                 discount:       %.2f

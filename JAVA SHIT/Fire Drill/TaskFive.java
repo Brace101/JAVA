@@ -1,20 +1,22 @@
-import java.util.Scanner;
-public class TaskFour{
-public static void main(String [] args){
-Scanner input = new Scanner (System.in);
+import java.util.Arrays;
 
-int scoreEven = 0;
+public class TaskFiveArray {
 
-for(int number = 1; number <= 10; number++){
-    System.out.print("Enter number: "); 
-    int scores = input.nextInt();
+    public static int[] oddIndex(int[] arr) {
+        int[] result = new int[arr.length / 2];
+        int resultIndex = 0;
 
-if(scores % 2 == 0){
-        scoreEven += scores;
+        for (int i = 1; i < arr.length; i += 2) {
+            result[resultIndex] = arr[i];
+            resultIndex++;
+        }
 
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.toString(oddIndex(numbers)));
+    }
 }
-}
 
- System.out.printf("the sum of the even indexed score is %d%n", scoreEven);
-}
-}

@@ -5,7 +5,7 @@ public class TransactionLog {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        double balance = 0.0;
+        double balance = 0;
         int pin = 1234;
 
         ArrayList<String> transactions = new ArrayList<>();
@@ -40,7 +40,7 @@ case 1:
             int transPin = input.nextInt();
 
             if (transPin == pin) {
-            balance += deposit;
+            balance = balance + deposit;
             transactions.add("Deposited " + deposit);
             System.out.println("You have successfully deposited.");
             System.out.println("Your available balance is: " + balance);
@@ -65,7 +65,7 @@ case 2:
             System.out.println("Insufficient balance.");
 
             } else {
-            balance -= withdrawal;
+            balance = balance - withdrawal;
             transactions.add("Withdrew " + withdrawal);
             System.out.println("Withdrawal successful.");
             System.out.println("Your available balance is: " + balance);
@@ -99,7 +99,7 @@ case 4:
          
             System.exit(0);
         
-break;
+
 }
 }
 }

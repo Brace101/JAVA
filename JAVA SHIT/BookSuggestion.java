@@ -1,13 +1,22 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class BookSuggestion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        ArrayList<String> bookTitle = new ArrayList<>();
+        ArrayList<Integer> numberOfPages = new ArrayList<>();
+        ArrayList<String> Author = new ArrayList<>();
+        
+        bookTitle.add("The Hobitt");
+        numberOfPages.add(320);
+        Author.add("J.R.R. Tolkien");
+
  while (true) {
 
-      String menu = """
+     String menu = """
                     
-     -----------WELCOME TO THE BOOK SUGGESTION SYSTEM!----------
+     ------WELCOME TO THE BOOK SUGGESTION SYSTEM!-----
                 1. Get Suggestion
                 2. Add Book
                 3. Remove Book
@@ -17,6 +26,7 @@ public class BookSuggestion {
                     
  """;
         System.out.println(menu);
+
         System.out.print("Enter Option: ");
         int option = input.nextInt();
         input.nextLine();
@@ -24,19 +34,15 @@ public class BookSuggestion {
 switch (option) {
 
 case 1 -> {
-        System.out.println("""
-        --- Book of the Day ---
-        Title: The Hobbit
-        Author: J.R.R. Tolkien
-        Pages: 320
-""");
+        
 
 while (true) {
-        System.out.print("Would you like another suggestion? (Yes/No): ");
+        System.out.print("Would you like to get another suggestion? (Yes/No): ");
         String moreSuggest = input.nextLine();
 
         if (moreSuggest.equalsIgnoreCase("yes")) {
         System.out.println("""
+
         --- Another Suggestion ---
         Title: The Mystery
         Author: Jeffrey Matthew
@@ -51,7 +57,7 @@ break;
         }
 
         case 2 -> {
-        System.out.print("Enter book title to add: ");
+        System.out.print("Kindly enter book title to add: ");
         String title = input.nextLine();
         
         System.out.print("Kindly enter the Author: ");
@@ -64,13 +70,13 @@ break;
         }
 
         case 3 -> {
-        System.out.print("Enter book title to remove: ");
+        System.out.print("Kindly enter book title to remove: ");
         String title = input.nextLine();
         System.out.println(title + " removed successfully!");
         }
 
         case 4 -> {
-        System.out.print("Enter book title to update: ");
+        System.out.print("Kindly enter book title to update: ");
         String title = input.nextLine();
         System.out.println(title + " updated successfully!");
         }
@@ -88,7 +94,7 @@ break;
         System.exit(0);
         }
 
-        default -> System.out.println("Invalid option. Try again.");
+        default -> System.out.println("Invalid option. PLease Try again.");
  }
  }
     }
