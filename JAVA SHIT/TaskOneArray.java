@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class TaskOneArray{
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int[] scores = new int[10];
+
+        for (int index = 0; index < scores.length; index++) {
+            System.out.print("Enter score " + (index + 1) + ": ");
+            scores[index] = input.nextInt();
+        }
+
+
+    }
+}
+
+
