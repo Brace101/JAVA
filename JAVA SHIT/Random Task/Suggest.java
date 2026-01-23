@@ -12,6 +12,7 @@ public class Suggest {
         System.out.print("Guess a number between 1 and 20: ");
         int guess = input.nextInt();
 
+       
         if (guess == randomNumber) {
             System.out.println("Correct! ");
         } else {
