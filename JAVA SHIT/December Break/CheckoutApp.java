@@ -53,6 +53,7 @@ import java.util.ArrayList;
         System.out.println("Enter Cashier name: ");
         String cashierName = input.nextLine();
         input.nextLine();
+
         double total= subTotal - discount;
         double billTotal = subTotal-discount+vat;
         System.out.println();

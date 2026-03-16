@@ -4,27 +4,23 @@ public class PrimeNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        int count = 0;
+        int  divisor = 2;
+
         System.out.print("Enter a number: ");
         int number = input.nextInt();
 
-        boolean isPrime = true;
+        for (divisor = 2; divisor < number; divisor++) {
 
-        if (number <= 1) {
-            isPrime = false;
-        } else {
-            for (int index = 2; index < number; index++) {
-                if (number % index == 0) {
-                    isPrime = false;
-                    break;
-                }
+            if (number % divisor == 0) {
+                count++;
             }
         }
 
-        if (isPrime) {
-            System.out.println("This is a prime number");
+        if (count == 0 && number > 1) {
+            System.out.println(number + " is a prime number");
         } else {
-            System.out.println("This is not a prime number");
+            System.out.println(number + " is not a prime number");
         }
     }
 }
-
